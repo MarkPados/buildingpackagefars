@@ -1,0 +1,54 @@
+---
+title: "Building R Package"
+author: "Mark Pados"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Overview
+
+This is a packge built to staisfy the requirements for the Building R Packages course on Coursera.
+
+## make_filename()
+
+Create filename with a provided year
+
+```{r eval=FALSE}
+make_filename(2015)
+```
+
+## fars_read()
+
+Read in Fatality Analysis Reporting System data file
+
+```{r eval=FALSE}
+fars_read("folder/data1.csv")
+```
+
+## fars_read_years()
+
+Read in multiple Fatality Analysis Reporting System data files
+
+```{r eval=FALSE}
+fars_read_years(2014:2016)
+```
+
+## fars_summarize_years()
+
+Summarize observations by multiple years
+
+```{r eval=FALSE}
+fars_summarize_years(2014:2016)
+```
+
+## fars_map_state()
+
+Plot State Accidents
+
+```{r eval=FALSE}
+fars_map_state(2, 2016)
+```

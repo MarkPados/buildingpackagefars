@@ -9,8 +9,8 @@ Date: 2018/05/10
 To install this package to run on your system, please first install and load the `devtools` package. Then you may install and load this package thus:
 
 ```R
-install_github('MarkPados/farsdata')
-library(farsdata)
+install_github('MarkPados/buildingpackagefars')
+library(buildingpackagefars)
 ```
 
 ### Vignette

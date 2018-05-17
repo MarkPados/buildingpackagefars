@@ -10,7 +10,9 @@
 #' @details The function will read the data from the path as data frame tibble. If it doesn't exist an error message will be returned.
 #'
 #' @examples
-#' fars_read("folder/data1.csv")
+#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+#' fars_read("accident_2013.csv.bz2")
+#' setwd(WD)
 #'
 #' @export
 fars_read <- function(filename) {
@@ -33,7 +35,9 @@ fars_read <- function(filename) {
 #' @details Create a filename with a provided year. E.g. if 2015 is provided then it will return "accident_2015_csv.bz2".
 #'
 #' @examples
+#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
 #' make_filename(2015)
+#' setwd(WD)
 #'
 #' @export
 make_filename <- function(year) {
@@ -55,7 +59,9 @@ make_filename <- function(year) {
 #' @details The function will read multiple data from the path as data frame tibble. If it doesn't exist an error message will be returned.
 #'
 #' @examples
-#' fars_read_years(2014:2016)
+#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+#' fars_read_years(2013:2015)
+#' setwd(WD)
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -88,11 +94,9 @@ fars_read_years <- function(years) {
 #' @details The function will read multiple data from the path as data frame tibble nad summerize it by years
 #'
 #' @examples
-#' fars_summarize_years(2014:2016)
-#' f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "buildingpackagefars")
-#' f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "buildingpackagefars")
-#' f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "buildingpackagefars")
-#' file.copy(from=c(f13path,f14path,f15path),to=getwd())
+#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+#' fars_summarize_years(2013:2015)
+#' setwd(WD)
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -119,7 +123,9 @@ fars_summarize_years <- function(years) {
 #' @details The function will read data and create a map of accidents for a given state and year.
 #'
 #' @examples
+#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
 #' fars_map_state(2, 2016)
+#' setwd(WD)
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

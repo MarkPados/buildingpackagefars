@@ -19,7 +19,7 @@ fars_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
-    readr::read_csv(system.file("extdata", filename, package="buildingpackagefars"), progress = FALSE)
+    readr::read_csv(system.file("inst/extdata", filename, package="buildingpackagefars"), progress = FALSE)
   })
   dplyr::tbl_df(data)
 }
@@ -43,7 +43,7 @@ fars_read <- function(filename) {
 make_filename <- function(year) {
   year <- as.integer(year)
   sprintf("accident_%d.csv.bz2", year)
-  system.file("extdata", file, package="buildingpackagefars")
+  system.file("inst/extdata", file, package="buildingpackagefars")
 }
 
 

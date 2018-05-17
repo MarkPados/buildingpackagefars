@@ -43,6 +43,7 @@ fars_read <- function(filename) {
 make_filename <- function(year) {
   year <- as.integer(year)
   sprintf("accident_%d.csv.bz2", year)
+  system.file("extdata", file, package="buildingpackagefars")
 }
 
 

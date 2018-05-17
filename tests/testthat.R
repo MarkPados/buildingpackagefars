@@ -1,4 +1,4 @@
 library(testthat)
 library(buildingpackagefars)
 
-test_check("fars_tests")
+test_check("buildingpackagefars")

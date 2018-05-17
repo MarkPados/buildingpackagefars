@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read}
 \alias{fars_read}
-\title{Read in Fatality Analysis Reporting System data file}
+\title{Read in Fatality Analysis Reporting System data file#'}
 \usage{
 fars_read(filename)
 }
@@ -13,7 +13,7 @@ fars_read(filename)
 Read in Fatality Analysis Reporting System data file from a csv file
 }
 \description{
-Read in Fatality Analysis Reporting System data file
+Read in Fatality Analysis Reporting System data file#'
 }
 \details{
 The function will read the data from the path as data frame tibble. If it doesn't exist an error message will be returned.

@@ -1,4 +1,4 @@
-#' Read in Fatality Analysis Reporting System data file
+#' Read in Fatality Analysis Reporting System data file#'
 #'
 #' @return Read in Fatality Analysis Reporting System data file from a csv file
 #'

@@ -125,7 +125,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @examples
 #' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
-#' fars_map_state(2, 2016)
+#' fars_map_state(2, "2016")
 #' setwd(WD)
 #'
 #' @export

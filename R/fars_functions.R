@@ -56,6 +56,7 @@ make_filename <- function(year) {
 #'
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
+#' @importFrom magrittr "%>%"
 #'
 #' @details The function will read multiple data from the path as data frame tibble. If it doesn't exist an error message will be returned.
 #'
@@ -91,6 +92,7 @@ fars_read_years <- function(years) {
 #' @importFrom dplyr group_by
 #' @importFrom dplyr summarize
 #' @importFrom tidyr spread
+#' @importFrom magrittr "%>%"
 #'
 #' @details The function will read multiple data from the path as data frame tibble nad summerize it by years
 #'
@@ -101,7 +103,6 @@ fars_read_years <- function(years) {
 #'
 #' @export
 fars_summarize_years <- function(years) {
-  requireNamespace(dplyr)
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
     dplyr::group_by(year, MONTH) %>%

@@ -124,9 +124,14 @@ fars_summarize_years <- function(years) {
 #' @details The function will read data and create a map of accidents for a given state and year.
 #'
 #' @examples
-#' WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
-#' fars_map_state(2, "2016")
-#' setwd(WD)
+#' library(mapdata)
+#' fars_map_state(12, 2014)
+#' fars_map_state(36, 2014)
+#'
+#' \dontrun{
+#' fars_map_state(3, 2014)   # error
+#' }
+#'
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

@@ -42,10 +42,9 @@ fars_read <- function(filename) {
 #' @export
 make_filename <- function(year) {
   year <- as.integer(year)
-  sprintf("accident_%d.csv.bz2", year)
-  system.file("inst/extdata", file, package="buildingpackagefars")
+  file <- sprintf("accident_%d.csv.bz2", year)
+  system.file("extdata", file, package="buildingpackagefars")
 }
-
 
 
 #' Read in multiple Fatality Analysis Reporting System data files

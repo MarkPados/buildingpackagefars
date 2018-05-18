@@ -124,7 +124,6 @@ fars_summarize_years <- function(years) {
 #' @details The function will read data and create a map of accidents for a given state and year.
 #'
 #' @examples
-#' library(mapdata)
 #' fars_map_state(12, 2014)
 #' fars_map_state(36, 2014)
 #'

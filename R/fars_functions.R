@@ -16,10 +16,11 @@
 #'
 #' @export
 fars_read <- function(filename) {
+  system.file("extdata", filename, package="buildingpackagefars")
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
-    readr::read_csv(system.file("inst/extdata", filename, package="buildingpackagefars"), progress = FALSE)
+    readr::read_csv(filename, progress = FALSE)
   })
   dplyr::tbl_df(data)
 }

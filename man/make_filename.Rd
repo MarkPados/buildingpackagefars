@@ -19,6 +19,8 @@ Create filename with a provided year
 Create a filename with a provided year. E.g. if 2015 is provided then it will return "accident_2015_csv.bz2".
 }
 \examples{
+WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
 make_filename(2015)
+setwd(WD)
 
 }

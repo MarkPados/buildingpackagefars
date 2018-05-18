@@ -19,6 +19,8 @@ Read in multiple Fatality Analysis Reporting System data files
 The function will read multiple data from the path as data frame tibble. If it doesn't exist an error message will be returned.
 }
 \examples{
-fars_read_years(2014:2016)
+WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+fars_read_years(2013:2015)
+setwd(WD)
 
 }

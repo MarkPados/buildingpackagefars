@@ -21,6 +21,13 @@ Plot State Accidents
 The function will read data and create a map of accidents for a given state and year.
 }
 \examples{
-fars_map_state(2, 2016)
+library(mapdata)
+fars_map_state(12, 2014)
+fars_map_state(36, 2014)
+
+\dontrun{
+fars_map_state(3, 2014)   # error
+}
+
 
 }

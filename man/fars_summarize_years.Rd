@@ -19,10 +19,8 @@ Summarize observations by multiple years
 The function will read multiple data from the path as data frame tibble nad summerize it by years
 }
 \examples{
-fars_summarize_years(2014:2016)
-f13path <- system.file("extdata", "accident_2013.csv.bz2", package = "buildingpackagefars")
-f14path <- system.file("extdata", "accident_2014.csv.bz2", package = "buildingpackagefars")
-f15path <- system.file("extdata", "accident_2015.csv.bz2", package = "buildingpackagefars")
-file.copy(from=c(f13path,f14path,f15path),to=getwd())
+WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+fars_summarize_years(2013:2015)
+setwd(WD)
 
 }

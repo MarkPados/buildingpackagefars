@@ -19,6 +19,8 @@ Read in Fatality Analysis Reporting System data file#'
 The function will read the data from the path as data frame tibble. If it doesn't exist an error message will be returned.
 }
 \examples{
-fars_read("folder/data1.csv")
+WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
+fars_read("accident_2013.csv.bz2")
+setwd(WD)
 
 }

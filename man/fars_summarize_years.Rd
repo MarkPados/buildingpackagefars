@@ -20,7 +20,7 @@ The function will read multiple data from the path as data frame tibble nad summ
 }
 \examples{
 WD <- setwd(system.file("extdata", package = "buildingpackagefars"))
-fars_summarize_years(2013:2015)
+fars_summarize_years(years = c(2013,2014))
 setwd(WD)
 
 }

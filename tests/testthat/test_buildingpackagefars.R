@@ -1,4 +1,6 @@
 library(testthat)
+library(buildingpackagefars)
+
 context('Errors')
 
 test_that('Throws errors', {

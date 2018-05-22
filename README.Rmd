@@ -24,3 +24,8 @@ f13path<-system.file("extdata", "accident_2013.csv.bz2", package = "buildingpack
 f14path<-system.file("extdata", "accident_2014.csv.bz2", package = "buildingpackagefars")
 f15path<-system.file("extdata", "accident_2015.csv.bz2", package = "buildingpackagefars")
 file.copy(from=c(f13path,f14path,f15path),to=getwd())
+
+### Trevis badge
+
+https://travis-ci.org/MarkPados/buildingpackagefars.svg?branch=master
+

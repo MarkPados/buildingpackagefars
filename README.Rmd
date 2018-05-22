@@ -27,5 +27,5 @@ file.copy(from=c(f13path,f14path,f15path),to=getwd())
 
 ### Trevis badge
 
-https://travis-ci.org/MarkPados/buildingpackagefars.svg?branch=master
+[![Travis-CI Build Status](https://travis-ci.org/MarkPados/buildingpackagefars.svg?branch=master)](https://travis-ci.org/MarkPados/buildingpackagefars)
 
